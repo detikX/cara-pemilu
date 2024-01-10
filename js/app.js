@@ -3,7 +3,7 @@ $('.all').slick({
     slidesToScroll: 1,
     autoplay: true,
     // centerMode: true,
-    autoplaySpeed: 1200,
+    autoplaySpeed: 2000,
     responsive: [
         {
             breakpoint: 1024,
@@ -24,8 +24,8 @@ $('.all').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         }
         // You can unslick at a given breakpoint now by adding:
