@@ -1,0 +1,39 @@
+.partai {
+    .baca-koran {
+        position: absolute;
+        bottom: 0px;
+        left: 5%;
+        width: fit-content;
+        height: 320px;
+        @media screen and (max-width:768px) {
+            height: 220px;
+            left: -5%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    .kotak {
+        border-radius: 16px;
+        padding: 16px;
+        height: 60vh;
+        background: rgba($color: white, $alpha: .5);
+        .all {
+            display: block;
+        }
+        .bendera {
+            width: 200px;
+            display: inline-block;
+            height: 200px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+        }
+    }
+}
