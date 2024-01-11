@@ -1,12 +1,45 @@
 .banner {
     background: #e0c9a0;
+    // linear-gradient(to bottom, #dacebe , #f5eee4 )
+    // background: #dacebe ;
     // background: linear-gradient(45deg,#dacec0 50%,#f5eee5 35%);
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: -10vh;
+    //     right: 0;
+    //     left: 0;
+    //     height: 25vh;
+    //     width: 120%;
+    //     background: #f5eee4;
+    //     border-radius: 30%;
+    // }
     &__title {
         position: absolute;
-        left: 30%;
+        left: 10%;
         top: 30%;
+        @media screen and (max-width:768px) {
+            top: 15%;
+        }
         h2 {
-            font-size: 3rem;
+            font-size: 4.5rem;
+            font-family: "Outfit";
+            /* font-weight: bold; */
+            color: #fa8e2a;
+            text-shadow: 2px 2px #787676;
+            @media screen and (max-width:768px) {
+                font-size: 4.3rem;
+                line-height: 4rem;
+            }
+            &.upd {
+                font-size: 7rem;
+                color: #784621;
+                line-height: 4rem;
+                @media screen and (max-width:768px) {
+                    font-size: 3rem;
+                    line-height: 2.5rem;
+                }
+            }
         }
     }
     &__image {
@@ -15,6 +48,10 @@
         bottom: 0;
         width: fit-content;
         height: 100%;
+        @media screen and (max-width:768px) {
+            height: auto;
+            bottom: 72px;
+        }
         img {
             width: 100%;
             height: 100%;

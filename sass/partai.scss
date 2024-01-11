@@ -1,8 +1,8 @@
 .partai {
     .baca-koran {
         position: absolute;
-        bottom: 0px;
-        left: 5%;
+        bottom: -55%;
+        left: -40%;
         width: fit-content;
         height: 320px;
         @media screen and (max-width:768px) {
@@ -16,13 +16,29 @@
         }
     }
     
+    .arah {
+        position: absolute;
+        bottom: -65px;
+        height: 200px;
+        width: 65%;
+        border: 3px dashed white;
+        z-index: 0;
+        left: -100px;
+        border-left: 3px dashed transparent;
+        border-top: 3px dashed transparent;
+        @media screen and (max-width:768px) {
+            bottom: -100px;
+            width: 30%;
+            left: 100px;
+        }
+    }
     .kotak {
         border-radius: 16px;
         padding: 16px;
         height: 60vh;
         position: relative;
 
-        background: linear-gradient(to bottom, rgba(white,.3), #ececec);
+        background: linear-gradient(to bottom, rgba(white,.3), #ececec 50%);
         .all {
             display: block;
         }
