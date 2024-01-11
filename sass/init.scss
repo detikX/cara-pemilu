@@ -8,6 +8,11 @@ section {
     // background: #eee;
     background: #e0c9a0;
     position: relative;
+    .text-center {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
     p {
         @media screen and (max-width:400px) {
             font-size: .9rem;
