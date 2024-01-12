@@ -3,17 +3,17 @@
     // linear-gradient(to bottom, #dacebe , #f5eee4 )
     // background: #dacebe ;
     // background: linear-gradient(45deg,#dacec0 50%,#f5eee5 35%);
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     bottom: -10vh;
-    //     right: 0;
-    //     left: 0;
-    //     height: 25vh;
-    //     width: 120%;
-    //     background: #f5eee4;
-    //     border-radius: 30%;
-    // }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -10vh;
+        right: 0;
+        left: 0;
+        height: 25vh;
+        width: 120%;
+        background: #f5eee4;
+        // border-radius: 30%;
+    }
     &__title {
         position: absolute;
         left: 10%;
