@@ -1,13 +1,14 @@
 .partai {
     .baca-koran {
         position: absolute;
-        bottom: -55%;
+        bottom: -70%;
         left: -40%;
         width: fit-content;
         height: 320px;
         @media screen and (max-width:768px) {
             height: 220px;
             left: -5%;
+            bottom: -68%;
         }
         img {
             width: 100%;
@@ -35,18 +36,30 @@
     .kotak {
         border-radius: 16px;
         padding: 16px;
-        height: 60vh;
+        height: 50vh;
         position: relative;
 
         background: linear-gradient(to bottom, rgba(white,.3), #ececec 50%);
         .all {
             display: block;
         }
+        .pemimpin {
+            text-align: center;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            /* font-weight: 700; */
+            width: 75%;
+            margin: 8px auto;
+            font-family: 'Prompt';
+            @media screen and (max-width:768px) {
+                font-size: .9rem;
+            }
+        }
         .bendera {
             width: 200px;
             padding: 16px;
             border-radius: 8px;
-            background: white;
+            background: linear-gradient(45deg, #E0C99F, #f7e7cb);
             // border: 2px solid white;
             // display: inline-block;
             height: 200px;
