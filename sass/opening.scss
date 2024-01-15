@@ -12,6 +12,7 @@
         position: relative;
         &::before {
             background: #f7f7f7;
+            // background: #f5d8b0;
             box-shadow: 2px 3px 4px #111;
             content: "";
             z-index: -1;
@@ -51,7 +52,7 @@
                 text-align: center;
                 width: fit-content;
                 padding: 8px;
-                background: linear-gradient(to right, #f6bd37, #f7c854);
+                background: linear-gradient(to right, #e0c9a0, #e79c65);
                 margin: 0 auto;
                 box-shadow: 2px -1px 3px #999;
                 // border-radius: 8px;
