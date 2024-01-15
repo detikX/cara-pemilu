@@ -1,14 +1,15 @@
 .partai {
     .baca-koran {
         position: absolute;
-        bottom: -70%;
+        bottom: -56%;
         left: -40%;
         width: fit-content;
         height: 320px;
         @media screen and (max-width:768px) {
             height: 220px;
             left: -5%;
-            bottom: -68%;
+            z-index: 8;
+            bottom: -45%;
         }
         img {
             width: 100%;
@@ -36,7 +37,7 @@
     .kotak {
         border-radius: 16px;
         padding: 16px;
-        height: 50vh;
+        min-height: 50vh;
         position: relative;
 
         background: linear-gradient(to bottom, rgba(white,.3), #ececec 50%);
