@@ -90,11 +90,18 @@
     }
 
     .arah-bawah {
-        // position: absolute;
-        // top: -100px;
-        // width: 80%;
-        // height: 200px;
-        // border: 2px dashed white;
+        position: absolute;
+        top: -230px;
+        left: 8%;
+        width: 50%;
+        height: 340px;
+        border: 3px dashed #fff;
+        border-right: 3px dashed transparent;
+        border-top: 3px dashed transparent;
+        @media screen and (max-width:768px) {
+            left: 16%;
+        }
+    
     }
 
     .wrap-detikwow {
@@ -112,4 +119,12 @@
     padding: 16px;
     border-radius: 16px;
     margin-bottom: 16px;
+}
+
+.arrow-top {
+    position: absolute;
+    left: -100px;
+    height: 50vh;
+    width: 200px;
+    border: 2px dashed white;
 }
