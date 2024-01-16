@@ -1,4 +1,8 @@
 .partai {
+    padding-bottom: 50vh;
+    @media screen and (max-width:768px) {
+        padding-bottom: 50vh;
+    }
     .baca-koran {
         position: absolute;
         bottom: -56%;
@@ -73,6 +77,42 @@
                 object-fit: contain;
             }
 
+        }
+    }
+
+    .surat2 {
+        display: block;
+        margin: 0 auto 8px;
+        text-align: center;
+        .gimmick {
+            display: inline-block;
+            width: 18%;
+            height: 50px;
+            text-align: center;
+            vertical-align: top;
+            margin: 0 2px;
+            padding: 8px;
+            font-size: 12px;
+            // border: 4px solid transparent;
+            // font-weight: bold;
+            background: #E0C99F;
+            // background: linear-gradient(white, white)
+            //     padding-box,
+            //     repeating-linear-gradient(-45deg,
+            //     #C8102E 0, #C8102E 12.5%,
+            //     #ffffff 0, #ffffff 25%,
+            //     #3492b8 0, #3492b8 37.5%,
+            //     #ffffff 0, #ffffff 50%)
+            //     0 / 5em 5em;
+            // border-radius: 8px;
+
+            @media screen and (max-width:768px) {
+                
+                width: 31%;
+                height: 55px;
+                margin: 4px 2px;
+                font-size: 10px;
+                }
         }
     }
 }
