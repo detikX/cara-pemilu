@@ -93,6 +93,7 @@
             border: 2px dashed #c09b59;
             margin: 0 2px;
             padding: 4px;
+            font-weight: bold;
             color: #362507;
             font-size: 12px;
             background: #e0c99f;            // background: linear-gradient(white, white)
@@ -108,7 +109,7 @@
             @media screen and (max-width:768px) {
                 
                 width: 31%;
-                height: 55px;
+                height: 46px;
                 margin: 4px 2px;
                 font-size: 10px;
                 }
