@@ -8,6 +8,12 @@ section {
     // background: #eee;
     background: #e0c9a0;
     position: relative;
+
+    .bg-block {
+        background: white;
+        padding: 16px;
+        border-radius: 16px;
+    }
     .text-center {
         h3 {
             font-size: 2.5rem;
