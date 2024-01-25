@@ -77,4 +77,21 @@ $(document).ready(function () {
 
 //maen aos
 $("section p, .golongan .img").attr({ "data-aos": "fade-up", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
-$("section h3").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+$("section h3").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" });
+
+//gsap
+gsap.set(".photo:not(:first-child)", { opacity: 0, scale: 0.5 })
+
+const animation = gsap.to(".photo:not(:first-child)", {
+    opacity: 1, scale: 1, duration: 1, stagger: 1
+})
+
+ScrollTrigger.create({
+    trigger: ".gallery",
+    start: "top top",
+    end: "bottom bottom",
+    pin: ".tps .right",
+    animation: animation,
+    scrub: true,
+    markers: true
+})
