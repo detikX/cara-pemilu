@@ -90,7 +90,7 @@ ScrollTrigger.create({
     trigger: ".gallery",
     start: "top top",
     end: "bottom bottom",
-    pin: ".tps .right",
+    pin: ".last .right",
     animation: animation,
     scrub: true,
     markers: true
