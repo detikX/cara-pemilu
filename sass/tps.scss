@@ -1,6 +1,7 @@
 .tps {
-    background: linear-gradient(to bottom, #ccc, #e6e6e6, #ccc);
-    padding: 32px 0 0;
+    // background: linear-gradient(to bottom, #ccc, transparent, #ccc);
+    padding:  0 0;
+    background: #e6e6e6;
     
     &::before {
         content: "";
@@ -18,7 +19,7 @@
         width: 100%;
         z-index: -1;
         height: 100%;
-        background: linear-gradient(to bottom, #ccc, transparent, #ccc)
+        background: linear-gradient(to bottom, #ccc 10%, transparent, #e6e6e6 80%);
     }
     .img {
         width: fit-content;
@@ -73,6 +74,10 @@
     
     
     
+}
+
+.last {
+    padding: 0;
     .gallery {
       display:flex;	
       outline:1px solid red;
