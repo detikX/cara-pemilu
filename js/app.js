@@ -93,7 +93,7 @@ ScrollTrigger.create({
     pin: ".last .right",
     animation: animation,
     scrub: true,
-    markers: true
+    markers: false,
 })
 
 //countdown
