@@ -144,7 +144,7 @@ var x = setInterval(function () {
 
     $("#demo").html(
       `
-        <div class="expired">Piala Dunia sedang berlangsung</div>
+        <div class="expired"></div>
       `
     )
   }

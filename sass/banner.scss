@@ -19,7 +19,7 @@
         left: 10%;
         top: 30%;
         @media screen and (max-width:768px) {
-            top: 15%;
+            top: 25%;
         }
         h2 {
             font-size: 4.5rem;
@@ -29,15 +29,15 @@
             color: #ffa24d;
             text-shadow: 2px 2px #787676;
             @media screen and (max-width:768px) {
-                font-size: 4.3rem;
-                line-height: 4rem;
+                font-size: 3.3rem;
+                line-height: 3.1rem;
             }
             &.upd {
                 font-size: 7rem;
                 color: #784621;
                 line-height: 4rem;
                 @media screen and (max-width:768px) {
-                    font-size: 3rem;
+                    font-size: 2.6rem;
                     line-height: 2.5rem;
                 }
             }
