@@ -1,7 +1,7 @@
 .opening {
     // min-height: auto;
     // background: linear-gradient(to top, #f5eee4,#e0c9a0);
-    padding: 0px 0 32px;
+    // padding: 0px 0 32px;
     
     .atas {
         position: relative;
@@ -22,13 +22,16 @@
         // left: 0;
         // right: 0;
         top: 0;
+        left: 0;
+        right: 0;
         z-index: -1;
         width: 100%;
         height: fit-content;
         @media screen and (max-width:768px) {
-            width: 150%;
+            // width: 150%;
             height: fit-content;
-            left: -35%;
+            // left: -35%;
+            top: -50%;
         }
         img {
             width: 100%;
