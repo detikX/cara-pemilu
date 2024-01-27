@@ -1,7 +1,7 @@
 $('.all').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     // centerMode: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -103,49 +103,49 @@ var countDownDate = new Date("Feb 14, 2024 07:00:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function () {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+    // Get today's date and time
+    var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  var jam = ("0" + hours).slice(-2);
-  var min = ("0" + minutes).slice(-2);
-  var hari = ("0" + days).slice(-2);
-  var tik = ("0" + seconds).slice(-2);
+    var jam = ("0" + hours).slice(-2);
+    var min = ("0" + minutes).slice(-2);
+    var hari = ("0" + days).slice(-2);
+    var tik = ("0" + seconds).slice(-2);
 
-  // Output the result in an element with id="demo"
-  //   document.getElementById("demo").innerHTML = days + " Hari " + hours + " Jam "
-  //   + minutes + " Menit " + seconds + " Detik ";
+    // Output the result in an element with id="demo"
+    //   document.getElementById("demo").innerHTML = days + " Hari " + hours + " Jam "
+    //   + minutes + " Menit " + seconds + " Detik ";
 
-  $(".day").html(`
+    $(".day").html(`
     ${hari} <small>Hari</small>
 `)
-  $(".ho").html(`
+    $(".ho").html(`
     ${jam} <small>Jam</small>
 `)
-  $(".min").html(`
+    $(".min").html(`
     ${min} <small>Menit</small>
 `)
-  $(".sec").html(`
+    $(".sec").html(`
     ${tik} <small>Detik</small>
 `)
 
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    // document.getElementById("demo").innerHTML = "EXPIRED";
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        // document.getElementById("demo").innerHTML = "EXPIRED";
 
-    $("#demo").html(
-      `
+        $("#demo").html(
+            `
         <div class="expired"></div>
       `
-    )
-  }
+        )
+    }
 }, 1000);
