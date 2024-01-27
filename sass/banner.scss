@@ -103,20 +103,18 @@
 
     .benderax {
         position: absolute;
-        bottom: 0;
-        // left: 0;
-        // right: 0;
-        // top: 0;
-        left: 0;
+        bottom: -50vh;
+        left: -25%;
         right: 0;
         z-index: -1;
-        width: 100%;
-        height: fit-content;
+        width: 150%;
         @media screen and (max-width:768px) {
             // width: 150%;
             height: 100%;
+            left: initial;
             bottom: 0%;
             // left: -35%;
+            width: 100%;
             // top: -50%;
             // z-index: 88;
         }
