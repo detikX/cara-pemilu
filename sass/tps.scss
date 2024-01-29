@@ -65,6 +65,19 @@
 }
 
 .last {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(0, -50%);
+        width: 0;
+        height: 0;
+        left: 50%;
+        z-index: 5;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 50px solid #e6e6e6;
+    }
     .headline {
         background:#2D4E86;
         // border-radius:6px;
