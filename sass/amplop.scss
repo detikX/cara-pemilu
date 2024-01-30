@@ -11,6 +11,24 @@
     --heart-color: rgb(252, 8, 231);
   }
 .amplop {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kots.png');
+    z-index: -1;
+}
+&::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background: linear-gradient(to bottom, #e0c9a0 10%, rgba(#e0c9a0,.7), #e0c9a0 80%);
+}
     min-height: auto;
     margin: 0;
         padding: 0;
