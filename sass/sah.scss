@@ -101,6 +101,8 @@
             vertical-align: middle;
         }
     }
+
+    
     .img {
         width: 100%;
         height: fit-content;
@@ -142,4 +144,16 @@
             object-fit: contain;
         }
     }
+
+    .bg-text {
+        background: linear-gradient(to bottom, white, rgba(white,.5));
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    
 }
