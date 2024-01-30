@@ -5,7 +5,7 @@
     }
     .baca-koran {
         position: absolute;
-        bottom: -50%;
+        bottom: -80%;
         left: -40%;
         width: fit-content;
         height: 320px;
@@ -13,7 +13,7 @@
             height: 220px;
             left: -5%;
             z-index: 8;
-            bottom: -45%;
+            bottom: -95%;
         }
         img {
             width: 100%;
@@ -83,7 +83,7 @@
 
     .surat2 {
         display: block;
-        margin: 0 auto 8px;
+        margin: 0 auto 16px;
         text-align: center;
         .gimmick {
             display: inline-block;
@@ -174,14 +174,15 @@
 .woww {
     position: absolute;
     /* inset: 0; */
-    width: 80%;
+    width: 60%;
     left: 50%;
     z-index: -1;
     transform: translate(-50%,-60%);
     height: auto;
     top: 50%;
     @media screen and (max-width:768px) {
-        transform: translate(-50%, 43%);
+        transform: translate(-50%, -50%);
+        width: 100%;
     }
 
     img {

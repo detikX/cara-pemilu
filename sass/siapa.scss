@@ -1,0 +1,44 @@
+.siapa {
+    min-height: auto;
+    .surat2 {
+        display: block;
+        margin: 0 auto 16px;
+        text-align: center;
+        .gimmick {
+            display: inline-block;
+            width: 18%;
+            height: 50px;
+            text-align: center;
+            vertical-align: top;
+            border: 2px dashed #c09b59;
+            margin: 0 2px;
+            padding: 4px;
+            font-weight: bold;
+            color: #362507;
+            font-size: 12px;
+            background: #e0c99f;            // background: linear-gradient(white, white)
+            //     padding-box,
+            //     repeating-linear-gradient(-45deg,
+            //     #C8102E 0, #C8102E 12.5%,
+            //     #ffffff 0, #ffffff 25%,
+            //     #3492b8 0, #3492b8 37.5%,
+            //     #ffffff 0, #ffffff 50%)
+            //     0 / 5em 5em;
+            // border-radius: 8px;
+
+            @media screen and (max-width:768px) {
+                
+                width: 40%;
+                height: 46px;
+                margin: 4px 2px;
+                font-size: 10px;
+                }
+        }
+    }
+
+    .bg-hello {
+        background: linear-gradient(to bottom, rgba(white,.3), #ececec 50%);
+        padding: 16px;
+        border-radius: 16px;
+    }
+}
