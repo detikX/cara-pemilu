@@ -139,6 +139,12 @@
         bottom: 130px;
         transform: scale(1.5);
         transition-delay: 1s;
+        .bg-why {
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+          
+        }
       }
       .flap > .heart {
         transform: rotate(90deg);
