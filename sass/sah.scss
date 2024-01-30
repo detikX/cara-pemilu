@@ -93,12 +93,24 @@
             object-fit: contain;
         }
     }
+    .desc {
+        @media screen and (max-width:768px) {
+            width: 45%;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+    }
     .img {
         width: 100%;
         height: fit-content;
         border: 2px solid black;
         margin-bottom: 16px;
         position: relative;
+        @media screen and (max-width:768px) {
+            display: inline-block;
+            width: 50%;
+        }
         .paku {
             position: absolute;
             width: 50%;
