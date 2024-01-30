@@ -24,7 +24,7 @@
     
     .arah {
         position: absolute;
-        bottom: -65px;
+        bottom: -130px;
         height: 200px;
         width: 65%;
         border: 3px dashed white;
@@ -33,7 +33,7 @@
         border-left: 3px dashed transparent;
         border-top: 3px dashed transparent;
         @media screen and (max-width:768px) {
-            bottom: -100px;
+            bottom: -200px;
             width: 30%;
             left: 100px;
         }
