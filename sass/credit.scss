@@ -1,0 +1,50 @@
+.credit {
+    min-height: auto;
+    // background: linear-gradient(to left, #9cddc6, #a6dfc5);
+    // background: #a6dfc5;
+    // background: #5bdeaa;
+    color: #222;
+    .title {
+        color: #444;
+        @media screen and (max-width:768px) {
+            font-size: .8rem;
+        }
+    }
+    .nama {
+        font-size: 1.2rem;
+        font-weight: 700;
+        @media screen and (max-width:768px) {
+            font-size: 1rem;
+        }
+    }
+    .footer-bawah {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        top: -60%;
+        @media screen and (max-width:768px) {
+            bottom: 60%;
+            
+        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     width: 100%;
+        //     height: 90px;
+        //     background: linear-gradient(to left, #9cddc6, #a6dfc5);
+        //     @media screen and (max-width:768px) {
+        //         background: initial;
+        //     }
+        // }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
