@@ -78,5 +78,36 @@
         // transform: translate(-50%,-50%);
         border-radius: 16px;
         margin-bottom: 30vh;
+        &-left {
+            &::before {
+                content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -20px;
+        right: auto;
+        top: 38px;
+        bottom: auto;
+        border: 12px solid;
+        border-color: #e0c9a0 #e0c9a0 transparent transparent;
+            }
+
+        }
+
+        &-right {
+            &::before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -20px;
+                top: 38px;
+                bottom: auto;
+                border: 12px solid;
+                border-color: #e0c9a0 transparent transparent #e0c9a0;
+
+            }
+        }
     }
 }
