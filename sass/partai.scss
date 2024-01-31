@@ -170,19 +170,53 @@
         object-fit: contain;
     }
 }
-
+@keyframes woww {
+    0% {
+      top: 45%;
+      opacity: 0;
+    }
+    10% {
+        top: 45%;
+        opacity: 1;
+    }
+    50% {
+      top: 48%;
+      opacity: 1;
+    }
+    70% {
+        top: 50%;
+        opacity: 1;
+      }
+      80% {
+        top: 50%;
+        opacity: .5;
+      }
+      90% {
+        top: 50%;
+        opacity: 0;
+      }
+    100% {
+        top: 50%;
+        opacity: 0;
+    }
+  }
 .woww {
     position: absolute;
+    animation: woww 2s linear infinite;
+    opacity: 0;
+
     /* inset: 0; */
     width: 60%;
     left: 50%;
     z-index: -1;
     transform: translate(-50%,-60%);
     height: auto;
-    top: 50%;
+    top: 45%;
     @media screen and (max-width:768px) {
         transform: translate(-50%, -50%);
         width: 100%;
+        animation: woww 3s linear infinite;
+    
     }
 
     img {

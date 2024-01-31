@@ -62,7 +62,7 @@ $('.kaca').slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: true,
+                // centerMode: true,
             }
         }
         // You can unslick at a given breakpoint now by adding:
