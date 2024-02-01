@@ -73,7 +73,7 @@ $('.kaca').slick({
 
 $(document).ready(function () {
     AOS.init();
-
+    new WOW().init();
 })
 
 //maen aos
