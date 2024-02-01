@@ -41,10 +41,12 @@
     }
 
     .kaca {
-        background: linear-gradient(45deg, white, #e3e3e3);
+        background: linear-gradient(to top, white, #ffe3be);
         padding: 16px;
         display: block;
         border-radius: 16px;
+        position: relative;
+        top: -32px;
         .data {
             // margin: 0 auto;
             .partai {
@@ -123,6 +125,11 @@
         width: 960px;
         margin: 0 auto;
         display: block;
+        .wrap-detikx {
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+        }
         @media screen and (max-width:768px) {
             width: 90%;
         }
