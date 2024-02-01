@@ -1,5 +1,51 @@
 .siapa {
     min-height: auto;
+    .ketps {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        margin-bottom: 16px;
+        @media screen and (max-width:768px) {
+            height: 200px;
+            margin-bottom: 0;
+        }
+        .org {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            right: 32px;
+            bottom: 16px;
+            @media screen and (max-width:768px) {
+                width: 130px;
+                height: auto;
+                position: absolute;
+                right: -8px;
+                bottom: 24px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+
+            }
+        }
+        .calendar-only {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     .surat2 {
         display: block;
         margin: 0 auto 16px;
