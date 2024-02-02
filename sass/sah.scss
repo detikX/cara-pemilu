@@ -10,6 +10,30 @@
         background-image: url('../img/kots.png');
         z-index: -1;
     }
+    .corrupt {
+        // position: absolute;
+        // left: ;
+        width: 150px;
+        height: auto;
+        vertical-align: middle;
+        display: inline-block;
+        @media screen and (max-width:768px) {
+            width: 70px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .tdk {
+        display: inline-block;
+        width: 75%;
+        vertical-align: middle;
+        @media screen and (max-width:768px) {
+            width: 70%;
+        }
+    }
     &::after {
         content: "";
         position: absolute;
